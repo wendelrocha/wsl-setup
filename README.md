@@ -1,10 +1,8 @@
-# Automatizando o setup em um Linux, Debian-Like
+# Automatizando o setup do WSL de distros Debian-Like
 
-Este repositório é um Fork que estou adaptando para minha realidade. 
+Este repositório contém os passos para automatizar e acelerar o fluxo de trabalho e preparação do meu ambiente Linux, executado sob o WSL-2 (Windows Sub-system for Linux versão 2), utilizando Ansible e Git.  
 
-This repository contains scripts to automate and speedup the workflow and preparation for my machine.
-
-> **_Disclaimer_** :  
+> **Isenção de Responsabilidade** :  
 > Those scripts are ubuntu related with major version 18+, for other distributions you'll need to adapt it
 ___
 
