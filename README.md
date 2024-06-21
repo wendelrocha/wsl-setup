@@ -1,35 +1,38 @@
 # Automatizando o setup do WSL de distros Debian-Like
 
-Este repositório contém os passos para automatizar e acelerar o fluxo de trabalho e preparação do meu ambiente Linux, executado sob o WSL-2 (Windows Sub-system for Linux versão 2), utilizando Ansible e Git.  
+Este repositório contém os passos para automatizar a preparação do meu ambiente Linux Debian Like, executado sob o WSL-2 (Windows Sub-system for Linux versão 2), utilizando Ansible e Git.  
 
-> **Isenção de Responsabilidade** :  
-> Those scripts are ubuntu related with major version 18+, for other distributions you'll need to adapt it
+> **Isenção de Responsabilidade** :
+
+>Este código aplica-se a distribuições Linux, versões 18 e superiores. Para outras distribuições, você deve adapta-lo. 
+
 ___
 
-## Prepare Workstation
+## Preparando o computador
 
-> Read the `ubuntu.yml` file before applying and be sure to understand everything that will be done.
+> Leia o arquivo `ubuntu-like.yml`antes de executa-lo, certifique-se de que entendeu tudo o que ele faz.
 
-1. Install Ansible
+1. Instale 0 Ansible
 ```bash
 sudo apt update && sudo apt install ansible unzip git -y
 ```
-2. Clone this repository
+2. Clone este repositório
 ```bash
-git clone https://github.com/caiodelgadonew/tools.git
+git clone https://github.com/wendelrocha/wsl-setup.git
 ```
 
-3. Apply the configuration
+3. Aplique a configuração
 ```bash
-ansible-playbook tools/ubuntu.yml --ask-become-pass
+ansible-playbook tools/ubuntu-like.yml --ask-become-pass
 ```
->Type your password when asked to give root permissions for some actions.
+>Digite sua senha, quando solicitado, para dar permissões de root para algumas ações.
 ___
 
-# License
+# Licença
 GPLv3
 
-# Author Information
-Created by [Caio Delgado](https://linktr.ee/caiodelgadonew)
+# Autoria
+Criado por [Caio Delgado](https://linktr.ee/caiodelgadonew)
+Adaptado por [Wendel Rocha](https://www.linkedin.com/in/wendelrochapro/)
 
-Contributions are more than welcome!
+Contribuições são mais que bem-vindas
